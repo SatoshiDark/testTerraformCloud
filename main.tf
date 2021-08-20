@@ -45,7 +45,7 @@ resource "aws_lambda_function" "lambda" {
 
   environment {
     variables = {
-      greeting = "Hello Terraform Cloud test"
+      greeting = "Hello Terraform Cloud test, from: ${var.test_variable}"
     }
   }
 }
